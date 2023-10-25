@@ -1,0 +1,128 @@
+* {
+    color: white;
+}
+html, body {
+    height: 80%;
+    width: 40%
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #333F42;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.title {
+    display: inline;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.quizTitle {
+    position: relative;
+    background-color: #B4975A;
+    border-radius: 15px;
+    border-width: 5px;
+    border-color: #C8102E;
+    border-style: solid;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.game-title {
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.btnStart {
+    background-color: #B4975A;
+    border-radius: 15px;
+    border-width: 5px;
+    border-color: #C8102E;
+    scale: 120%;
+}
+
+.btnStart:hover {
+    scale: 140%;
+    transition: 1s;
+}
+
+.answer {
+    background-color: #B4975A;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+.question {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.answer:hover {
+    scale: 102%;
+    transition: 1s;
+    box-shadow: 0 0 30px 10px #FFFFFF;
+}
+
+.score-screen input {
+    background-color: #B4975A;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #C8102E;
+    
+}
+
+.btnsubmit {
+    background-color: #B4975A;
+    border-radius: 15px;
+    border-width: 3px;
+    border-color: #C8102E;
+    scale: 120%;
+}
+
+.initials {
+    border-radius: 30px;
+    border-style: none;
+    padding: 4px;
+    margin-right: 10px;
+    margin-left: 5px;
+    color: black;
+}
+
+.btnClear:hover {
+    scale: 110%;
+    transition: 1s;
+}
+
+.btnback:hover {
+    scale: 110%;
+    transition: 1s;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="scores">View High Scores</div>
+        <div class="time">Time: <span id="time"> </span></div>
+    </div>
+
+    <div class="title">
+        <h2 class="quizTitle"><ion-icon name="star-outline"></ion-icon>Quiz<ion-icon name="star-outline"></ion-icon></h2>
+        <h3>Test your Golden Knights knowledge!</h3>
+        
+    </div>
+
+    <div class="game-title" id="game-title">
+        <button class="btnStart">Start Quiz</button>
+    </div>
+
+    <div class="container" hidden>
+    <div class="question" id="question"></div>
+        <div 
+            class="answer" 
+            id="answerA"
+            onclick="nextQuestion('a')">
+        </div>
+        <div 
+            class="answer" 
+            id="answerB"
+            onclick="nextQuestion('b')">
+        </div>
+        <div 
+            class="answer" 
+            id="answerC"
+            onclick="nextQuestion('c')">
+        </div>
+        <div 
+            class="answer" 
+            id="answerD"
+            onclick="nextQuestion('d')">
+        </div>
+
+        <div 
+            class="guess" 
+            id="guess">
+        </div>
+
+        <div 
+            class="answer-description" 
+            id="answer-description">
+        </div>
+    </div>
+
+    <div class="score-screen" hidden>
+        <div class="high-score-list">
+            <h1>High Scores!</h1>
+            <ul id="score-list">hi</ul>
+        </div>
+        <div class="button-container">
+            <input type="button" value="Return to Game" class="btnback">
+            <input type="button" value="Clear Scores" class="btnClear">
+        </div>
+            
+    </div>
+
+    <div class="user-score" hidden>
+        <h1>You completed the quiz!!</h1>
+        <h2 class="scored-points">Final Score is...</h2>
+        <form>
+            <label for="initials">Your Initials:</label>
+            <input type="text" class="initials" id="initials">
+            <input type="submit" value="submit" class="btnsubmit">
+        </form>
+    </div>
+  
+    
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
